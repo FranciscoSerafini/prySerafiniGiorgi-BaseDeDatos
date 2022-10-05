@@ -49,12 +49,14 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void deportistasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            frmRegistrosDeDeportistas ventanaRegistroDeDeportista = new frmRegistrosDeDeportistas();
+            ventanaRegistroDeDeportista.ShowDialog();
         }
 
         private void entrenadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmRegistroDeEntrenadores ventanaRegistroDeEntrenadores = new frmRegistroDeEntrenadores();
+            ventanaRegistroDeEntrenadores.ShowDialog();
         }
 
         private void deportistasToolStripMenuItem1_Click(object sender, EventArgs e)
