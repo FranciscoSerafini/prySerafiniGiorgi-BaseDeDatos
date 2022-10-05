@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblFechaActual = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deportistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,8 +38,6 @@
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deportistasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.entrenadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblFechaActual = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,18 @@
             this.statusStrip1.Size = new System.Drawing.Size(800, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(12, 17);
+            this.lblEstado.Text = "-";
+            // 
+            // lblFechaActual
+            // 
+            this.lblFechaActual.Name = "lblFechaActual";
+            this.lblFechaActual.Size = new System.Drawing.Size(12, 17);
+            this.lblFechaActual.Text = "-";
             // 
             // menuStrip1
             // 
@@ -78,12 +90,14 @@
             this.deportistasToolStripMenuItem.Name = "deportistasToolStripMenuItem";
             this.deportistasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deportistasToolStripMenuItem.Text = "Deportistas";
+            this.deportistasToolStripMenuItem.Click += new System.EventHandler(this.deportistasToolStripMenuItem_Click);
             // 
             // entrenadorToolStripMenuItem
             // 
             this.entrenadorToolStripMenuItem.Name = "entrenadorToolStripMenuItem";
             this.entrenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entrenadorToolStripMenuItem.Text = "Entrenador";
+            this.entrenadorToolStripMenuItem.Click += new System.EventHandler(this.entrenadorToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -99,24 +113,14 @@
             this.deportistasToolStripMenuItem1.Name = "deportistasToolStripMenuItem1";
             this.deportistasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.deportistasToolStripMenuItem1.Text = "Deportistas";
+            this.deportistasToolStripMenuItem1.Click += new System.EventHandler(this.deportistasToolStripMenuItem1_Click);
             // 
             // entrenadorToolStripMenuItem1
             // 
             this.entrenadorToolStripMenuItem1.Name = "entrenadorToolStripMenuItem1";
             this.entrenadorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.entrenadorToolStripMenuItem1.Text = "Entrenador";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(12, 17);
-            this.lblEstado.Text = "-";
-            // 
-            // lblFechaActual
-            // 
-            this.lblFechaActual.Name = "lblFechaActual";
-            this.lblFechaActual.Size = new System.Drawing.Size(12, 17);
-            this.lblFechaActual.Text = "-";
+            this.entrenadorToolStripMenuItem1.Click += new System.EventHandler(this.entrenadorToolStripMenuItem1_Click);
             // 
             // frmPrincipal
             // 
