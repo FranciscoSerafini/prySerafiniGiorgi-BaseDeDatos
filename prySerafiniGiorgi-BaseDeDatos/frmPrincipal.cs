@@ -18,8 +18,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
         public OleDbConnection conexionBase; 
         public OleDbConnection queQuieroDeLaBase;
         public OleDbConnection lectorDeConsultas;
-        public string varRutaBaseDeDatos =
-            "C:\\Users\\franc\\Desktop\\ANALISTA EN SISTEMAS\\SEMESTRE II\\LABORATORIO DE PROGRAMACION\\Base de datos\\Base-Datos-main\\2022103-VS-BaseDatos";
+        public string varRutaBaseDeDatos = "Provider=Microsoft.ACE.OLEDB.12.0;" +
+            "Data Source=C:\\Users\franc\\source\\repos\\prySerafiniGiorgi-BaseDeDatos1\\prySerafiniGiorgi-BaseDeDatos\bin\\Debug";
 
         public string varRutaDeBaseDeDatos;
         public frmPrincipal()
