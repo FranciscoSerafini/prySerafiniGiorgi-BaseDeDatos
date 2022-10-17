@@ -32,17 +32,17 @@ namespace prySerafiniGiorgi_BaseDeDatos
             try
             {
                 conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaDeportista);
-                conexionBase.Open(); //conexion de la base 
+                conexionBase.Open(); //Abre la base de datos 
 
                 queQuieroDeportista = new OleDbCommand();
-                queQuieroDeportista.Connection = conexionBase; //conecta a la base
-                queQuieroDeportista.CommandType = CommandType.TableDirect; //Escribe
+                queQuieroDeportista.Connection = conexionBase; 
+                queQuieroDeportista.CommandType = CommandType.TableDirect; 
                 queQuieroDeportista.CommandText = "DEPORTISTA";
                 lectorDeportista = queQuieroDeportista.ExecuteReader();
 
                 while (lectorDeportista.Read())
                 {
-                    dtgDeportistas.Rows.Add(lectorDeportista["Nombre"], lectorDeportista["Apelldio"], lectorDeportista["Direccion"], lectorDeportista["Edad"], lectorDeportista["Deporte"]);
+                    dtgDeportistas.Rows.Add(lectorDeportista["Nombre"], lectorDeportista["Apellido"], lectorDeportista["Direccion"], lectorDeportista["Edad"], lectorDeportista["Deporte"]);
                 
                 }
                 lectorDeportista.Close();
