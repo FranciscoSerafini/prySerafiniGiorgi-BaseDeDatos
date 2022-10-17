@@ -11,8 +11,16 @@ using System.Data.OleDb;
 
 namespace prySerafiniGiorgi_BaseDeDatos
 {
+    
+    
     public partial class frmConsultaDeportista : Form
     {
+        //vartiables globales a utilizar
+        OleDbConnection conexionBase;
+        OleDbCommand queQuieroDeportista;
+        OleDbDataReader lectorDeportista;
+
+        public string rutaDeportista = "DEPORTE.accdb"; 
         public frmConsultaDeportista()
         {
             InitializeComponent();
@@ -20,9 +28,25 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void cmdListarDeportista_Click(object sender, EventArgs e)
         {
+            
             try
             {
-                OleDbConnection conexionBaseDeDatos;
+                conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaDeportista);
+                conexionBase.Open(); //conexion de la base 
+
+                queQuieroDeportista = new OleDbCommand();
+                queQuieroDeportista.Connection = conexionBase; //conecta a la base
+                queQuieroDeportista.CommandType = CommandType.TableDirect; //Escribe
+                queQuieroDeportista.CommandText = "DEPORTISTA";
+                lectorDeportista = queQuieroDeportista.ExecuteReader();
+
+                while (lectorDeportista.Read())
+                {
+                    dtgDeportistas.Rows.Add(lectorDeportista["Nombre"], lectorDeportista["Apelldio"], lectorDeportista["Direccion"], lectorDeportista["Edad"], lectorDeportista["Deporte"]);
+                
+                }
+                lectorDeportista.Close();
+                conexionBase.Close();
                 
                 
 
@@ -30,7 +54,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
             catch (Exception)
             {
 
-                throw;
+                //throw;
             }
         }
 

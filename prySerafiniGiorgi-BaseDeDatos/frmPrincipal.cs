@@ -18,14 +18,16 @@ namespace prySerafiniGiorgi_BaseDeDatos
         public OleDbConnection conexionBase; 
         public OleDbConnection queQuieroDeLaBase;
         public OleDbConnection lectorDeConsultas;
-        public string varRutaBaseDeDatos = "Provider=Microsoft.ACE.OLEDB.12.0;" +
-            "Data Source=C:\\Users\franc\\source\\repos\\prySerafiniGiorgi-BaseDeDatos1\\prySerafiniGiorgi-BaseDeDatos\bin\\Debug";
+        public string varRutaBaseDeDatos = "DEPORTE.accdb";
+           
 
         public string varRutaDeBaseDeDatos;
         public frmPrincipal()
         {
             InitializeComponent();
         }
+        
+        
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
