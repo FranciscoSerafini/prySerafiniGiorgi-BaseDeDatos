@@ -16,7 +16,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
     public partial class frmConsultaDeportista : Form
     {
         //vartiables globales a utilizar
-        OleDbConnection conexionBase;
+        OleDbConnection conexionBase; 
         OleDbCommand queQuieroDeportista;
         OleDbDataReader lectorDeportista;
 
