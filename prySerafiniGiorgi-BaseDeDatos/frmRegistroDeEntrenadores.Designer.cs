@@ -41,7 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtProvincia = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cmdRegistroDeportistas
@@ -53,6 +53,7 @@
             this.cmdRegistroDeportistas.TabIndex = 33;
             this.cmdRegistroDeportistas.Text = "Registrar";
             this.cmdRegistroDeportistas.UseVisualStyleBackColor = true;
+            this.cmdRegistroDeportistas.Click += new System.EventHandler(this.cmdRegistroDeportistas_Click);
             // 
             // label8
             // 
@@ -95,6 +96,12 @@
             // lstDeporte
             // 
             this.lstDeporte.FormattingEnabled = true;
+            this.lstDeporte.Items.AddRange(new object[] {
+            "TENIS",
+            "BASQUET",
+            "CICLISMO",
+            "FUTBOL",
+            "VOLEY"});
             this.lstDeporte.Location = new System.Drawing.Point(182, 305);
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(181, 21);
@@ -160,20 +167,19 @@
             this.label6.TabIndex = 34;
             this.label6.Text = "Provincia";
             // 
-            // comboBox1
+            // txtProvincia
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(180, 257);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 21);
-            this.comboBox1.TabIndex = 35;
+            this.txtProvincia.Location = new System.Drawing.Point(182, 257);
+            this.txtProvincia.Name = "txtProvincia";
+            this.txtProvincia.Size = new System.Drawing.Size(181, 20);
+            this.txtProvincia.TabIndex = 35;
             // 
             // frmRegistroDeEntrenadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 406);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtProvincia);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmdRegistroDeportistas);
             this.Controls.Add(this.label8);
@@ -209,6 +215,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtProvincia;
     }
 }

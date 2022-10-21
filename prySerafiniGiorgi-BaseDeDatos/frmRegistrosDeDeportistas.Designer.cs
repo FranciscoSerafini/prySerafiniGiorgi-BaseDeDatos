@@ -44,6 +44,10 @@
             this.txtCodigoDeportista = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmdRegistroDeportistas = new System.Windows.Forms.Button();
+            this.StatusBDdeportista = new System.Windows.Forms.StatusStrip();
+            this.lblFechaActual = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StatusBDdeportista.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -126,6 +130,12 @@
             // lstDeporte
             // 
             this.lstDeporte.FormattingEnabled = true;
+            this.lstDeporte.Items.AddRange(new object[] {
+            "TENIS",
+            "BASQUET",
+            "CICLISMO",
+            "FUTBOL",
+            "VOLEY"});
             this.lstDeporte.Location = new System.Drawing.Point(184, 344);
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(181, 21);
@@ -187,12 +197,34 @@
             this.cmdRegistroDeportistas.TabIndex = 17;
             this.cmdRegistroDeportistas.Text = "Registrar";
             this.cmdRegistroDeportistas.UseVisualStyleBackColor = true;
+            this.cmdRegistroDeportistas.Click += new System.EventHandler(this.cmdRegistroDeportistas_Click);
+            // 
+            // StatusBDdeportista
+            // 
+            this.StatusBDdeportista.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblFechaActual,
+            this.lblEstado});
+            this.StatusBDdeportista.Location = new System.Drawing.Point(0, 459);
+            this.StatusBDdeportista.Name = "StatusBDdeportista";
+            this.StatusBDdeportista.Size = new System.Drawing.Size(385, 22);
+            this.StatusBDdeportista.TabIndex = 18;
+            // 
+            // lblFechaActual
+            // 
+            this.lblFechaActual.Name = "lblFechaActual";
+            this.lblFechaActual.Size = new System.Drawing.Size(0, 17);
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(0, 17);
             // 
             // frmRegistrosDeDeportistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 441);
+            this.ClientSize = new System.Drawing.Size(385, 481);
+            this.Controls.Add(this.StatusBDdeportista);
             this.Controls.Add(this.cmdRegistroDeportistas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCodigoDeportista);
@@ -211,6 +243,9 @@
             this.Controls.Add(this.label1);
             this.Name = "frmRegistrosDeDeportistas";
             this.Text = "Registro de deportistas";
+            this.Load += new System.EventHandler(this.frmRegistrosDeDeportistas_Load);
+            this.StatusBDdeportista.ResumeLayout(false);
+            this.StatusBDdeportista.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +269,8 @@
         private System.Windows.Forms.TextBox txtCodigoDeportista;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button cmdRegistroDeportistas;
+        private System.Windows.Forms.StatusStrip StatusBDdeportista;
+        private System.Windows.Forms.ToolStripStatusLabel lblFechaActual;
+        private System.Windows.Forms.ToolStripStatusLabel lblEstado;
     }
 }

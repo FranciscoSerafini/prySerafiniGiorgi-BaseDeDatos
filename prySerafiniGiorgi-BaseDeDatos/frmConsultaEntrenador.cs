@@ -18,6 +18,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
         OleDbConnection conexionBase;
         OleDbCommand queQuierodeEntrenador;
         OleDbDataReader lectorBaseEntrenador;
+        
 
         public string rutaEntrenador = "DEPORTE.accdb";
 
