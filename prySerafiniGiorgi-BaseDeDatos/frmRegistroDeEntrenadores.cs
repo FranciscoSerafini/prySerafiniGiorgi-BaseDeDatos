@@ -25,6 +25,14 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void cmdRegistroDeportistas_Click(object sender, EventArgs e)
         {
+            //declaracion de variables a grabar
+            string IdEntrenadores = txtCodigoEntrenador.Text;
+            string NombreEntrenador = txtNombreEntrenador.Text;
+            string ApellidoEntrenador = txtApellidoEntrenador.Text;
+            string DireccionEntrenador = Convert.ToString(txtDireccionEntrenador.Text);
+            string ProvinciaEntrenador = txtProvincia.Text;
+            string Deporte = Convert.ToString(lstDeporte.SelectedItem);
+
             try
             {
                 conexionBD = new OleDbConnection(RutaBD);
@@ -33,8 +41,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
                 comandoBD.Connection = conexionBD; //conexion al origen de datos
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
-                comandoBD.CommandText = "INSERT INTO" + " ENTRENADORES ([NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE])" +
-                        " VALUES ('" + txtApellidoEntrenador.Text + "','" + txtApellidoEntrenador.Text + "','" + txtDireccionEntrenador.Text + "','" + txtProvincia.Text + "','" + lstDeporte.SelectedItem + "')";
+                comandoBD.CommandText = "INSERT INTO" + " ENTRENADORES ([CODIGO ENTRENADOR], [NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE])" +
+                        " VALUES ('" +IdEntrenadores + "','" + NombreEntrenador + "','" + ApellidoEntrenador+ "','" + DireccionEntrenador+ "','" + ProvinciaEntrenador + "','" + Deporte+"')";
 
                 comandoBD.ExecuteNonQuery();//numero de filas afectadas
                 MessageBox.Show("Tus datos fueron ingresados con exito");
@@ -43,7 +51,14 @@ namespace prySerafiniGiorgi_BaseDeDatos
             {
 
                 //throw;
-            }  
+            }
+            //luego de grabar debemos limpiar las cajas de textos
+            txtApellidoEntrenador.Text = "";
+            txtCodigoEntrenador.Text = "";
+            txtDireccionEntrenador.Text = "";
+            txtNombreEntrenador.Text = "";
+            txtProvincia.Text = "";
+            lstDeporte.SelectedItem = -1;
         }
     }
 }

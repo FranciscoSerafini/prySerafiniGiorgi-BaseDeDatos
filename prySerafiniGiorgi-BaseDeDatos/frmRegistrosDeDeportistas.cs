@@ -27,6 +27,19 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void cmdRegistroDeportistas_Click(object sender, EventArgs e)
         {
+            //variables para almacenar datos para el registro
+            string IdDeportista = txtCodigoDeportista.Text;
+            string NombreDeportista = txtNombreDeportista.Text;
+            string ApellidoDeportista = txtApellidoDeportista.Text;
+            string DireccionDeportista = Convert.ToString(txtDireccionDeportista.Text);
+            Int32 TelefonoDeportistas = Convert.ToInt32(mskTelfonoDeportista.Text);
+            Int32 EdadDeportista = Convert.ToInt32(mskEdadDeportista.Text);
+            string Deporte = Convert.ToString(lstDeporte.SelectedItem);
+
+
+
+
+
             try
             {
                 conexionBD = new OleDbConnection(RutaBD);
@@ -36,7 +49,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
                 comandoBD.Connection = conexionBD; //conexion al origen de datos
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
                 comandoBD.CommandText = "INSERT INTO" + " DEPORTISTA ([NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE])" +
-                        " VALUES ('" + txtApellidoDeportista.Text + "','" + txtApellidoDeportista.Text + "','" + txtDireccionDeportista.Text + "','" + mskTelfonoDeportista.Text + "','" + mskEdadDeportista.Text + "','" + lstDeporte.SelectedItem + "')";
+                        " VALUES ('" + IdDeportista + "','" + NombreDeportista + "','" + ApellidoDeportista+ "','" + DireccionDeportista+ "','" + TelefonoDeportistas+ "','" + EdadDeportista + "','" +Deporte +  "')";
                 
                 comandoBD.ExecuteNonQuery();//numero de filas afectadas
                 MessageBox.Show("Tus datos fueron ingresados con exito");
@@ -45,7 +58,15 @@ namespace prySerafiniGiorgi_BaseDeDatos
             {
                 MessageBox.Show("Tus datos no se pudieron registrar");
                 //throw;
-            } 
+            }
+            //luego de cada registro debemos vaciar las cajas de texto
+            txtApellidoDeportista.Text = "";
+            txtCodigoDeportista.Text = "";
+            txtDireccionDeportista.Text = "";
+            txtNombreDeportista.Text = "";
+            mskEdadDeportista.Text = "";
+            mskTelfonoDeportista.Text = "";
+            lstDeporte.SelectedItem = -1;
 
         }
 
