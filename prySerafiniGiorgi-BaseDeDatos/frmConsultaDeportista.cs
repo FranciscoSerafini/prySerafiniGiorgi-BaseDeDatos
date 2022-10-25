@@ -78,7 +78,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
                 conexionBase.Open();
                
                 queQuieroDeportista.CommandType = CommandType.Text;
-                queQuieroDeportista.CommandText = "DELETE FROM" + "DEPORTISTAS([NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE])" + "WHERE('" + codigo +"')";
+                queQuieroDeportista.CommandText = "DELETE FROM" + " DEPORTISTAS ([NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE])" + "WHERE('" + codigo +"')";
                 queQuieroDeportista.ExecuteNonQuery();
                 MessageBox.Show("El registro fue eleminado");
                

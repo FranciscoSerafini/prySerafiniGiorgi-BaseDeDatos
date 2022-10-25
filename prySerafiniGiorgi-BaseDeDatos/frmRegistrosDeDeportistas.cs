@@ -48,8 +48,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
                 comandoBD.Connection = conexionBD; //conexion al origen de datos
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
-                comandoBD.CommandText = "INSERT INTO" + " DEPORTISTA ([NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE])" +
-                        " VALUES ('" + IdDeportista + "','" + NombreDeportista + "','" + ApellidoDeportista+ "','" + DireccionDeportista+ "','" + TelefonoDeportistas+ "','" + EdadDeportista + "','" +Deporte +  "')";
+                comandoBD.CommandText = " INSERT INTO " + " DEPORTISTA ([CODIGO DEPORTISTA], [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE]) " +
+                        " VALUES ('" + IdDeportista + "','" + NombreDeportista + "','" + ApellidoDeportista + "','" + DireccionDeportista + "','" + TelefonoDeportistas + "','" + EdadDeportista + "','" + Deporte +  "')";
                 
                 comandoBD.ExecuteNonQuery();//numero de filas afectadas
                 MessageBox.Show("Tus datos fueron ingresados con exito");
