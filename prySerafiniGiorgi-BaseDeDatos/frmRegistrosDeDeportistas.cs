@@ -53,12 +53,14 @@ namespace prySerafiniGiorgi_BaseDeDatos
                 
                 comandoBD.ExecuteNonQuery();//numero de filas afectadas
                 MessageBox.Show("Tus datos fueron ingresados con exito");
+
             }
             catch (Exception)
             {
                 MessageBox.Show("Tus datos no se pudieron registrar");
                 //throw;
             }
+            conexionBD.Close();
             //luego de cada registro debemos vaciar las cajas de texto
             txtApellidoDeportista.Text = "";
             txtCodigoDeportista.Text = "";
