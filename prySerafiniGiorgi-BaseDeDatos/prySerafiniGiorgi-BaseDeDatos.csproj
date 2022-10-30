@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClaseDeportista.cs" />
     <Compile Include="frmConsultaDeportista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +77,12 @@
     <Compile Include="frmRegistrosDeDeportistas.Designer.cs">
       <DependentUpon>frmRegistrosDeDeportistas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifiacionesDeportistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifiacionesDeportistas.Designer.cs">
+      <DependentUpon>ModifiacionesDeportistas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmConsultaDeportista.resx">
@@ -92,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrosDeDeportistas.resx">
       <DependentUpon>frmRegistrosDeDeportistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifiacionesDeportistas.resx">
+      <DependentUpon>ModifiacionesDeportistas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
