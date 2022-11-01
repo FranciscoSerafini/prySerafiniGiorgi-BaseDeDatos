@@ -120,16 +120,16 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
-
                 comando.CommandText = Sql;
                 comando.ExecuteNonQuery();
-
-
                 conexion.Close();
+
+
+                MessageBox.Show("Tu registro se pudo modificar");
             }
             catch (Exception)
             {
-
+                MessageBox.Show("Tu registro no se pudo modificar");
                 
             }
 

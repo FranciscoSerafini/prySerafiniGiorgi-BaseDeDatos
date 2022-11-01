@@ -31,19 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigoDEportista = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cmdBuscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtDeporte = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmdBuscar = new System.Windows.Forms.Button();
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -85,84 +85,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del deportista";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Direccion";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 138);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Deporte";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 66);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Edad";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(136, 92);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 13);
-            this.label8.TabIndex = 6;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(139, 61);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 13);
-            this.label9.TabIndex = 7;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(136, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 13);
-            this.label10.TabIndex = 8;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(139, 155);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 13);
-            this.label11.TabIndex = 9;
-            // 
-            // cmdBuscar
-            // 
-            this.cmdBuscar.Location = new System.Drawing.Point(190, 59);
-            this.cmdBuscar.Name = "cmdBuscar";
-            this.cmdBuscar.Size = new System.Drawing.Size(75, 23);
-            this.cmdBuscar.TabIndex = 3;
-            this.cmdBuscar.Text = "Buscar";
-            this.cmdBuscar.UseVisualStyleBackColor = true;
-            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Telefono";
-            // 
             // txtDeporte
             // 
             this.txtDeporte.Location = new System.Drawing.Point(73, 141);
@@ -191,9 +113,87 @@
             this.txtDireccion.Size = new System.Drawing.Size(158, 20);
             this.txtDireccion.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Telefono";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(139, 155);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 13);
+            this.label11.TabIndex = 9;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(136, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 8;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(139, 61);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 13);
+            this.label9.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(136, 92);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 13);
+            this.label8.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 66);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Edad";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 138);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Deporte";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 30);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Direccion";
+            // 
+            // cmdBuscar
+            // 
+            this.cmdBuscar.Location = new System.Drawing.Point(190, 59);
+            this.cmdBuscar.Name = "cmdBuscar";
+            this.cmdBuscar.Size = new System.Drawing.Size(75, 23);
+            this.cmdBuscar.TabIndex = 3;
+            this.cmdBuscar.Text = "Buscar";
+            this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
+            // 
             // cmdGuardar
             // 
-            this.cmdGuardar.Location = new System.Drawing.Point(190, 320);
+            this.cmdGuardar.Location = new System.Drawing.Point(190, 274);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(75, 23);
             this.cmdGuardar.TabIndex = 4;

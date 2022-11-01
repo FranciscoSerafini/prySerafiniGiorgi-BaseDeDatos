@@ -48,7 +48,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
                 while (lectorBaseEntrenador.Read()) // creamos el while para cargar los objetos en la grilla
                 {
-                    dtgEntrenadores.Rows.Add(lectorBaseEntrenador["Nombre"], lectorBaseEntrenador["Apellido"], lectorBaseEntrenador["Direccion"], lectorBaseEntrenador["Provincia"], lectorBaseEntrenador["Deporte"]);
+                    dtgEntrenadores.Rows.Add(lectorBaseEntrenador["Codigo Deportista"], lectorBaseEntrenador["Nombre"], lectorBaseEntrenador["Apellido"], lectorBaseEntrenador["Direccion"], lectorBaseEntrenador["Provincia"], lectorBaseEntrenador["Deporte"]);
                 }
                 
                 lectorBaseEntrenador.Close();
@@ -64,5 +64,40 @@ namespace prySerafiniGiorgi_BaseDeDatos
                // throw;
             }
         }
+
+        private void cmdEliminarRegistro_Click(object sender, EventArgs e)
+        {
+            string codigo = Convert.ToString(txtCodigoEntrenador.Text);
+
+
+            try
+            {
+
+                conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaEntrenador);
+                queQuierodeEntrenador.Connection = conexionBase;
+                conexionBase.Open();
+
+                queQuierodeEntrenador.CommandType = CommandType.Text;
+                queQuierodeEntrenador.CommandText = "DELETE FROM ENTRENADORES " +
+                    "WHERE('" + codigo + "'=[CODIGO DEPORTISTA])";
+                queQuierodeEntrenador.ExecuteNonQuery();
+                MessageBox.Show("El registro fue eleminado");
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tu registro no fue elminado");
+                //throw;
+            }
+            conexionBase.Close();
+
+
+
+        }
+ 
     }
-}
+    }
+
+

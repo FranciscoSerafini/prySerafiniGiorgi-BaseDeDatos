@@ -39,12 +39,17 @@ namespace prySerafiniGiorgi_BaseDeDatos
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
             string deportistaCodigo = txtCodigoDEportista.Text;
+            string direccion = txtDireccion.Text;
+            string deporte = txtDeporte.Text;
+            Int32 edad = Convert.ToInt32(txtEdad.Text);
+           Int32 telefono = Convert.ToInt32(txtTelefono.Text);
             ClaseDeportista modificar = new ClaseDeportista();
-            modificar.Modificar(deportistaCodigo);
-            modificar.Direccion = txtDireccion.Text;
-            modificar.Edad = Convert.ToInt32(txtEdad.Text);
-            modificar.Telefono = Convert.ToInt32(txtTelefono.Text);
-            modificar.Deportes = txtDeporte.Text;
+            modificar.Modificar(direccion);
+            modificar.Modificar(edad.ToString());
+            modificar.Modificar(telefono.ToString());
+            modificar.Modificar(deporte);
+
+
         }
     }
 }
