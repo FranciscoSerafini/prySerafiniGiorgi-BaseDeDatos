@@ -20,17 +20,17 @@ namespace prySerafiniGiorgi_BaseDeDatos
         private string Tabla = "ENTRENADORES";
 
         //variables a cambiar o eliminar
-        private string codigoEntrenador;
+        private string codigoEntrenadores;
         private string nombre;
         private string apellido;
         private string direccion;
         private string provincia;
         private string deporte;
 
-        public string codigoDeportista
+        public string codigoEntrenador
         {
-            get { return codigoEntrenador; }
-            set { codigoEntrenador = value; }
+            get { return codigoEntrenadores; }
+            set { codigoEntrenadores = value; }
         }
         public string Nombre
         {
@@ -97,7 +97,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
             }
         }
 
-        public void Modificar(string codigoDeportista)
+        public void Modificar(string codigoEntrenador)
         {
             try
             {

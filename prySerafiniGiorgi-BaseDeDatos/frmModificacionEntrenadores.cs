@@ -22,7 +22,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
             string codigo = txtCodigoDeEntrenador.Text;
             clsEntrenadores Buscar = new clsEntrenadores();
             Buscar.Buscar(codigo);
-            if (Buscar.codigoDeportista != codigo)
+            if (Buscar.codigoEntrenador != codigo)
             {
                 MessageBox.Show("No se encuentra el codigo en la base de datos");
             }

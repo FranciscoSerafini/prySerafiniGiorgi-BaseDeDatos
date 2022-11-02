@@ -49,7 +49,7 @@
             // cmdGuardar
             // 
             this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGuardar.Location = new System.Drawing.Point(190, 224);
+            this.cmdGuardar.Location = new System.Drawing.Point(227, 225);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(75, 23);
             this.cmdGuardar.TabIndex = 9;
@@ -60,7 +60,7 @@
             // cmdBuscar
             // 
             this.cmdBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdBuscar.Location = new System.Drawing.Point(190, 45);
+            this.cmdBuscar.Location = new System.Drawing.Point(227, 45);
             this.cmdBuscar.Name = "cmdBuscar";
             this.cmdBuscar.Size = new System.Drawing.Size(75, 23);
             this.cmdBuscar.TabIndex = 8;
@@ -178,7 +178,7 @@
             // txtCodigoDeEntrenador
             // 
             this.txtCodigoDeEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodigoDeEntrenador.Location = new System.Drawing.Point(107, 16);
+            this.txtCodigoDeEntrenador.Location = new System.Drawing.Point(144, 19);
             this.txtCodigoDeEntrenador.Name = "txtCodigoDeEntrenador";
             this.txtCodigoDeEntrenador.Size = new System.Drawing.Size(158, 20);
             this.txtCodigoDeEntrenador.TabIndex = 6;
@@ -197,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 253);
+            this.ClientSize = new System.Drawing.Size(317, 253);
             this.Controls.Add(this.cmdGuardar);
             this.Controls.Add(this.cmdBuscar);
             this.Controls.Add(this.groupBox1);
