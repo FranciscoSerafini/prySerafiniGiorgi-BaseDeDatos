@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.dtgEntrenadores = new System.Windows.Forms.DataGridView();
-            this.cmdListarEntrenadores = new System.Windows.Forms.Button();
-            this.grpEliminarRegistro = new System.Windows.Forms.GroupBox();
-            this.txtCodigoEntrenador = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmdEliminarRegistro = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmdListarEntrenadores = new System.Windows.Forms.Button();
+            this.grpEliminarRegistro = new System.Windows.Forms.GroupBox();
+            this.txtCodigoEntrenador = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmdEliminarRegistro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEntrenadores)).BeginInit();
             this.grpEliminarRegistro.SuspendLayout();
             this.SuspendLayout();
@@ -58,57 +58,6 @@
             this.dtgEntrenadores.Name = "dtgEntrenadores";
             this.dtgEntrenadores.Size = new System.Drawing.Size(636, 220);
             this.dtgEntrenadores.TabIndex = 0;
-            // 
-            // cmdListarEntrenadores
-            // 
-            this.cmdListarEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdListarEntrenadores.Location = new System.Drawing.Point(547, 250);
-            this.cmdListarEntrenadores.Name = "cmdListarEntrenadores";
-            this.cmdListarEntrenadores.Size = new System.Drawing.Size(101, 39);
-            this.cmdListarEntrenadores.TabIndex = 1;
-            this.cmdListarEntrenadores.Text = "Listar";
-            this.cmdListarEntrenadores.UseVisualStyleBackColor = true;
-            this.cmdListarEntrenadores.Click += new System.EventHandler(this.cmdListarEntrenadores_Click);
-            // 
-            // grpEliminarRegistro
-            // 
-            this.grpEliminarRegistro.Controls.Add(this.txtCodigoEntrenador);
-            this.grpEliminarRegistro.Controls.Add(this.label1);
-            this.grpEliminarRegistro.Controls.Add(this.cmdEliminarRegistro);
-            this.grpEliminarRegistro.Location = new System.Drawing.Point(12, 260);
-            this.grpEliminarRegistro.Name = "grpEliminarRegistro";
-            this.grpEliminarRegistro.Size = new System.Drawing.Size(319, 119);
-            this.grpEliminarRegistro.TabIndex = 6;
-            this.grpEliminarRegistro.TabStop = false;
-            this.grpEliminarRegistro.Text = "Eliminar registro";
-            // 
-            // txtCodigoEntrenador
-            // 
-            this.txtCodigoEntrenador.Location = new System.Drawing.Point(176, 33);
-            this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
-            this.txtCodigoEntrenador.Size = new System.Drawing.Size(121, 20);
-            this.txtCodigoEntrenador.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Codigo  entrenador";
-            // 
-            // cmdEliminarRegistro
-            // 
-            this.cmdEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdEliminarRegistro.Location = new System.Drawing.Point(196, 72);
-            this.cmdEliminarRegistro.Name = "cmdEliminarRegistro";
-            this.cmdEliminarRegistro.Size = new System.Drawing.Size(101, 39);
-            this.cmdEliminarRegistro.TabIndex = 4;
-            this.cmdEliminarRegistro.Text = "Eliminar";
-            this.cmdEliminarRegistro.UseVisualStyleBackColor = true;
-            this.cmdEliminarRegistro.Click += new System.EventHandler(this.cmdEliminarRegistro_Click);
             // 
             // Column1
             // 
@@ -145,6 +94,58 @@
             this.Column6.HeaderText = "Deporte";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
+            // 
+            // cmdListarEntrenadores
+            // 
+            this.cmdListarEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdListarEntrenadores.Location = new System.Drawing.Point(547, 250);
+            this.cmdListarEntrenadores.Name = "cmdListarEntrenadores";
+            this.cmdListarEntrenadores.Size = new System.Drawing.Size(101, 39);
+            this.cmdListarEntrenadores.TabIndex = 1;
+            this.cmdListarEntrenadores.Text = "Listar";
+            this.cmdListarEntrenadores.UseVisualStyleBackColor = true;
+            this.cmdListarEntrenadores.Click += new System.EventHandler(this.cmdListarEntrenadores_Click);
+            // 
+            // grpEliminarRegistro
+            // 
+            this.grpEliminarRegistro.Controls.Add(this.txtCodigoEntrenador);
+            this.grpEliminarRegistro.Controls.Add(this.label1);
+            this.grpEliminarRegistro.Controls.Add(this.cmdEliminarRegistro);
+            this.grpEliminarRegistro.Location = new System.Drawing.Point(12, 260);
+            this.grpEliminarRegistro.Name = "grpEliminarRegistro";
+            this.grpEliminarRegistro.Size = new System.Drawing.Size(319, 119);
+            this.grpEliminarRegistro.TabIndex = 6;
+            this.grpEliminarRegistro.TabStop = false;
+            this.grpEliminarRegistro.Text = "Eliminar registro";
+            // 
+            // txtCodigoEntrenador
+            // 
+            this.txtCodigoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoEntrenador.Location = new System.Drawing.Point(176, 33);
+            this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
+            this.txtCodigoEntrenador.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigoEntrenador.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Codigo  entrenador";
+            // 
+            // cmdEliminarRegistro
+            // 
+            this.cmdEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEliminarRegistro.Location = new System.Drawing.Point(196, 72);
+            this.cmdEliminarRegistro.Name = "cmdEliminarRegistro";
+            this.cmdEliminarRegistro.Size = new System.Drawing.Size(101, 39);
+            this.cmdEliminarRegistro.TabIndex = 4;
+            this.cmdEliminarRegistro.Text = "Eliminar";
+            this.cmdEliminarRegistro.UseVisualStyleBackColor = true;
+            this.cmdEliminarRegistro.Click += new System.EventHandler(this.cmdEliminarRegistro_Click);
             // 
             // frmConsultaEntrenador
             // 

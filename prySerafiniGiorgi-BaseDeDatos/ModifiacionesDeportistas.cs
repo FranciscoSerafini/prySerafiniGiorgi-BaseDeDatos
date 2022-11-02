@@ -44,10 +44,11 @@ namespace prySerafiniGiorgi_BaseDeDatos
             Int32 edad = Convert.ToInt32(txtEdad.Text);
            Int32 telefono = Convert.ToInt32(txtTelefono.Text);
             ClaseDeportista modificar = new ClaseDeportista();
-            modificar.Modificar(direccion);
-            modificar.Modificar(edad.ToString());
-            modificar.Modificar(telefono.ToString());
-            modificar.Modificar(deporte);
+            modificar.Direccion = direccion;
+            modificar.Edad = edad;
+            modificar.Deportes = deporte;
+            modificar.Telefono = telefono;
+            modificar.Modificar(deportistaCodigo);
 
 
         }

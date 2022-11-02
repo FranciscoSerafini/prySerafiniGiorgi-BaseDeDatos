@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdRegistroDeportistas = new System.Windows.Forms.Button();
+            this.cmdRegistroEntrenadores = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCodigoEntrenador = new System.Windows.Forms.TextBox();
             this.txtApellidoEntrenador = new System.Windows.Forms.TextBox();
@@ -48,16 +48,16 @@
             this.StatusBDEntrenador.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmdRegistroDeportistas
+            // cmdRegistroEntrenadores
             // 
-            this.cmdRegistroDeportistas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdRegistroDeportistas.Location = new System.Drawing.Point(228, 348);
-            this.cmdRegistroDeportistas.Name = "cmdRegistroDeportistas";
-            this.cmdRegistroDeportistas.Size = new System.Drawing.Size(135, 33);
-            this.cmdRegistroDeportistas.TabIndex = 33;
-            this.cmdRegistroDeportistas.Text = "Registrar";
-            this.cmdRegistroDeportistas.UseVisualStyleBackColor = true;
-            this.cmdRegistroDeportistas.Click += new System.EventHandler(this.cmdRegistroDeportistas_Click);
+            this.cmdRegistroEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdRegistroEntrenadores.Location = new System.Drawing.Point(228, 348);
+            this.cmdRegistroEntrenadores.Name = "cmdRegistroEntrenadores";
+            this.cmdRegistroEntrenadores.Size = new System.Drawing.Size(135, 33);
+            this.cmdRegistroEntrenadores.TabIndex = 33;
+            this.cmdRegistroEntrenadores.Text = "Registrar";
+            this.cmdRegistroEntrenadores.UseVisualStyleBackColor = true;
+            this.cmdRegistroEntrenadores.Click += new System.EventHandler(this.cmdRegistroDeportistas_Click);
             // 
             // label8
             // 
@@ -206,7 +206,7 @@
             this.Controls.Add(this.StatusBDEntrenador);
             this.Controls.Add(this.txtProvincia);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.cmdRegistroDeportistas);
+            this.Controls.Add(this.cmdRegistroEntrenadores);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCodigoEntrenador);
             this.Controls.Add(this.txtApellidoEntrenador);
@@ -230,7 +230,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button cmdRegistroDeportistas;
+        private System.Windows.Forms.Button cmdRegistroEntrenadores;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCodigoEntrenador;
         private System.Windows.Forms.TextBox txtApellidoEntrenador;

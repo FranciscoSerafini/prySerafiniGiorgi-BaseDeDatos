@@ -112,12 +112,10 @@ namespace prySerafiniGiorgi_BaseDeDatos
             try
             {
                 //usaremos sentencias de SQL
-                string Sql = "UPDATE DEPORTISTA SET ([DIRECCION], [TELEFONO], [EDAD], [DEPORTE]) WHERE ('" + codigoDeportista + "'= [CODIGO DEPORTISTA])";
+                string Sql = "UPDATE DEPORTISTA SET DIRECCION= '" + Direccion + "', TELEFONO=" + Telefono + ", EDAD=" + Edad + ", DEPORTE='" + Deportes + "' WHERE [CODIGO DEPORTISTA] = '" + codigoDeportista + "'";
                 //Conecto la base de datos
                 conexion.ConnectionString = Ruta;
                 conexion.Open();
-
-
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
                 comando.CommandText = Sql;
