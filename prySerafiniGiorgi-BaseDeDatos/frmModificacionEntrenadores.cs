@@ -34,5 +34,18 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
             }
         }
+
+        private void cmdGuardar_Click(object sender, EventArgs e)
+        {
+            string codigoEntrenador = txtCodigoDeEntrenador.Text;
+            string direccion = txtDireccion.Text;
+            string deporte = txtDeporte.Text;
+            string provincia = txtProvincia.Text;
+            clsEntrenadores modificar = new clsEntrenadores();
+            modificar.Direccion = direccion;
+            modificar.Deportes = deporte;
+            modificar.Provincia = provincia;
+            modificar.Modificar(codigoEntrenador);
+        }
     }
 }

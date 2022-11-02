@@ -98,6 +98,36 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
             }
         }
+
+        public void Modificar(string codigoDeportista)
+        {
+            try
+            {
+                //usaremos sentencias de SQL
+                string Sql = "UPDATE ENTRENADORES SET DIRECCION= '" + Direccion + "', PROVINCIA='" + Provincia +"', DEPORTE='" + Deportes + "' WHERE [CODIGO DEPORTISTA] = '" + codigoEntrenador + "'";
+                //Conecto la base de datos
+                conexion.ConnectionString = Ruta;
+                conexion.Open();
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = Sql;
+                comando.ExecuteNonQuery();
+                conexion.Close();
+
+
+                MessageBox.Show("Tu registro se pudo modificar");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tu registro no se pudo modificar");
+
+            }
+
+
+
+
+
+        }
     }
 
 
