@@ -121,9 +121,10 @@
             // txtCodigoEntrenador
             // 
             this.txtCodigoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEntrenador.Location = new System.Drawing.Point(176, 33);
             this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
-            this.txtCodigoEntrenador.Size = new System.Drawing.Size(121, 20);
+            this.txtCodigoEntrenador.Size = new System.Drawing.Size(121, 21);
             this.txtCodigoEntrenador.TabIndex = 6;
             // 
             // label1
@@ -157,6 +158,7 @@
             this.Controls.Add(this.dtgEntrenadores);
             this.Name = "frmConsultaEntrenador";
             this.Text = "Consulta entrenadores";
+            this.Load += new System.EventHandler(this.frmConsultaEntrenador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEntrenadores)).EndInit();
             this.grpEliminarRegistro.ResumeLayout(false);
             this.grpEliminarRegistro.PerformLayout();

@@ -66,5 +66,10 @@ namespace prySerafiniGiorgi_BaseDeDatos
         {
             
         }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -99,7 +99,11 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
 
         }
- 
+
+        private void frmConsultaEntrenador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

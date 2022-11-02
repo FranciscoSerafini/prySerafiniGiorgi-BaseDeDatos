@@ -33,8 +33,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
             string NombreDeportista = txtNombreDeportista.Text;
             string ApellidoDeportista = txtApellidoDeportista.Text;
             string DireccionDeportista = Convert.ToString(txtDireccionDeportista.Text);
-            Int32 TelefonoDeportistas = Convert.ToInt32(txtTelefono.Text);
-            Int32 EdadDeportista = Convert.ToInt32(txtEdad.Text);
+            Int32 TelefonoDeportistas = Convert.ToInt32(mskTelefono.Text);
+            Int32 EdadDeportista = Convert.ToInt32(mskEdad.Text);
             string Deporte = Convert.ToString(lstDeporte.SelectedItem);
 
 
@@ -67,8 +67,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
             txtCodigoDeportista.Text = "";
             txtDireccionDeportista.Text = "";
             txtNombreDeportista.Text = "";
-            txtEdad.Text = "";
-            txtTelefono.Text = "";
+            mskEdad.Text = "";
+            mskTelefono.Text = "";
             lstDeporte.SelectedItem = -1;
             txtCodigoDeportista.Focus();
             lstDeporte.SelectedItem = "";

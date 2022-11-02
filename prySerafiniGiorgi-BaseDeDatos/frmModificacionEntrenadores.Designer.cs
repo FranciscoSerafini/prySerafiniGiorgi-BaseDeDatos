@@ -83,7 +83,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(15, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 140);
+            this.groupBox1.Size = new System.Drawing.Size(287, 140);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del deportista";
@@ -92,7 +92,7 @@
             // txtDeporte
             // 
             this.txtDeporte.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDeporte.Location = new System.Drawing.Point(73, 102);
+            this.txtDeporte.Location = new System.Drawing.Point(123, 104);
             this.txtDeporte.Name = "txtDeporte";
             this.txtDeporte.Size = new System.Drawing.Size(158, 21);
             this.txtDeporte.TabIndex = 4;
@@ -100,7 +100,7 @@
             // txtProvincia
             // 
             this.txtProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtProvincia.Location = new System.Drawing.Point(73, 66);
+            this.txtProvincia.Location = new System.Drawing.Point(123, 66);
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(158, 21);
             this.txtProvincia.TabIndex = 6;
@@ -108,10 +108,11 @@
             // txtDireccion
             // 
             this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDireccion.Location = new System.Drawing.Point(73, 27);
+            this.txtDireccion.Location = new System.Drawing.Point(123, 30);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(158, 21);
             this.txtDireccion.TabIndex = 7;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // label11
             // 

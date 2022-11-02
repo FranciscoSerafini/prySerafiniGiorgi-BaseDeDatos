@@ -72,33 +72,37 @@
             // txtCodigoEntrenador
             // 
             this.txtCodigoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoEntrenador.Location = new System.Drawing.Point(182, 69);
             this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
-            this.txtCodigoEntrenador.Size = new System.Drawing.Size(181, 20);
+            this.txtCodigoEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtCodigoEntrenador.TabIndex = 31;
             // 
             // txtApellidoEntrenador
             // 
             this.txtApellidoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtApellidoEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoEntrenador.Location = new System.Drawing.Point(182, 163);
             this.txtApellidoEntrenador.Name = "txtApellidoEntrenador";
-            this.txtApellidoEntrenador.Size = new System.Drawing.Size(181, 20);
+            this.txtApellidoEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtApellidoEntrenador.TabIndex = 29;
             // 
             // txtDireccionEntrenador
             // 
             this.txtDireccionEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDireccionEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionEntrenador.Location = new System.Drawing.Point(182, 210);
             this.txtDireccionEntrenador.Name = "txtDireccionEntrenador";
-            this.txtDireccionEntrenador.Size = new System.Drawing.Size(181, 20);
+            this.txtDireccionEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtDireccionEntrenador.TabIndex = 28;
             // 
             // txtNombreEntrenador
             // 
             this.txtNombreEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNombreEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEntrenador.Location = new System.Drawing.Point(182, 116);
             this.txtNombreEntrenador.Name = "txtNombreEntrenador";
-            this.txtNombreEntrenador.Size = new System.Drawing.Size(181, 20);
+            this.txtNombreEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtNombreEntrenador.TabIndex = 27;
             // 
             // lstDeporte
@@ -179,9 +183,10 @@
             // txtProvincia
             // 
             this.txtProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProvincia.Location = new System.Drawing.Point(182, 257);
             this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(181, 20);
+            this.txtProvincia.Size = new System.Drawing.Size(181, 21);
             this.txtProvincia.TabIndex = 35;
             // 
             // StatusBDEntrenador

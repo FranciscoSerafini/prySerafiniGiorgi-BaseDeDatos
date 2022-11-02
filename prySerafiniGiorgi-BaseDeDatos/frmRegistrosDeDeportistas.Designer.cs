@@ -45,8 +45,8 @@
             this.StatusBDdeportista = new System.Windows.Forms.StatusStrip();
             this.lblFechaActual = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.mskTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.mskEdad = new System.Windows.Forms.MaskedTextBox();
             this.StatusBDdeportista.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,33 +138,37 @@
             // txtNombreDeportista
             // 
             this.txtNombreDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNombreDeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreDeportista.Location = new System.Drawing.Point(184, 120);
             this.txtNombreDeportista.Name = "txtNombreDeportista";
-            this.txtNombreDeportista.Size = new System.Drawing.Size(181, 20);
+            this.txtNombreDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtNombreDeportista.TabIndex = 10;
             // 
             // txtDireccionDeportista
             // 
             this.txtDireccionDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDireccionDeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionDeportista.Location = new System.Drawing.Point(184, 211);
             this.txtDireccionDeportista.Name = "txtDireccionDeportista";
-            this.txtDireccionDeportista.Size = new System.Drawing.Size(181, 20);
+            this.txtDireccionDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtDireccionDeportista.TabIndex = 12;
             // 
             // txtApellidoDeportista
             // 
             this.txtApellidoDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtApellidoDeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoDeportista.Location = new System.Drawing.Point(184, 168);
             this.txtApellidoDeportista.Name = "txtApellidoDeportista";
-            this.txtApellidoDeportista.Size = new System.Drawing.Size(181, 20);
+            this.txtApellidoDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtApellidoDeportista.TabIndex = 13;
             // 
             // txtCodigoDeportista
             // 
             this.txtCodigoDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoDeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoDeportista.Location = new System.Drawing.Point(184, 78);
             this.txtCodigoDeportista.Name = "txtCodigoDeportista";
-            this.txtCodigoDeportista.Size = new System.Drawing.Size(181, 20);
+            this.txtCodigoDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtCodigoDeportista.TabIndex = 15;
             // 
             // label8
@@ -208,29 +212,33 @@
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(0, 17);
             // 
-            // txtEdad
+            // mskTelefono
             // 
-            this.txtEdad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtEdad.Location = new System.Drawing.Point(184, 303);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(181, 20);
-            this.txtEdad.TabIndex = 19;
+            this.mskTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskTelefono.Location = new System.Drawing.Point(184, 256);
+            this.mskTelefono.Mask = "99999";
+            this.mskTelefono.Name = "mskTelefono";
+            this.mskTelefono.Size = new System.Drawing.Size(181, 21);
+            this.mskTelefono.TabIndex = 19;
+            this.mskTelefono.ValidatingType = typeof(int);
             // 
-            // txtTelefono
+            // mskEdad
             // 
-            this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtTelefono.Location = new System.Drawing.Point(184, 258);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(181, 20);
-            this.txtTelefono.TabIndex = 20;
+            this.mskEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskEdad.Location = new System.Drawing.Point(184, 301);
+            this.mskEdad.Mask = "99";
+            this.mskEdad.Name = "mskEdad";
+            this.mskEdad.Size = new System.Drawing.Size(181, 21);
+            this.mskEdad.TabIndex = 20;
+            this.mskEdad.ValidatingType = typeof(int);
             // 
             // frmRegistrosDeDeportistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 481);
-            this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.mskEdad);
+            this.Controls.Add(this.mskTelefono);
             this.Controls.Add(this.StatusBDdeportista);
             this.Controls.Add(this.cmdRegistroDeportistas);
             this.Controls.Add(this.label8);
@@ -275,7 +283,7 @@
         private System.Windows.Forms.StatusStrip StatusBDdeportista;
         private System.Windows.Forms.ToolStripStatusLabel lblFechaActual;
         private System.Windows.Forms.ToolStripStatusLabel lblEstado;
-        private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.MaskedTextBox mskTelefono;
+        private System.Windows.Forms.MaskedTextBox mskEdad;
     }
 }
