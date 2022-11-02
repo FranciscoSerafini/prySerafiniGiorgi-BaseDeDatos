@@ -35,18 +35,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.mskTelfonoDeportista = new System.Windows.Forms.MaskedTextBox();
             this.lstDeporte = new System.Windows.Forms.ComboBox();
             this.txtNombreDeportista = new System.Windows.Forms.TextBox();
             this.txtDireccionDeportista = new System.Windows.Forms.TextBox();
             this.txtApellidoDeportista = new System.Windows.Forms.TextBox();
-            this.mskEdadDeportista = new System.Windows.Forms.MaskedTextBox();
             this.txtCodigoDeportista = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cmdRegistroDeportistas = new System.Windows.Forms.Button();
             this.StatusBDdeportista = new System.Windows.Forms.StatusStrip();
             this.lblFechaActual = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.StatusBDdeportista.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,15 +120,9 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Deporte";
             // 
-            // mskTelfonoDeportista
-            // 
-            this.mskTelfonoDeportista.Location = new System.Drawing.Point(184, 256);
-            this.mskTelfonoDeportista.Name = "mskTelfonoDeportista";
-            this.mskTelfonoDeportista.Size = new System.Drawing.Size(181, 20);
-            this.mskTelfonoDeportista.TabIndex = 8;
-            // 
             // lstDeporte
             // 
+            this.lstDeporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstDeporte.FormattingEnabled = true;
             this.lstDeporte.Items.AddRange(new object[] {
             "TENIS",
@@ -143,6 +137,7 @@
             // 
             // txtNombreDeportista
             // 
+            this.txtNombreDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombreDeportista.Location = new System.Drawing.Point(184, 120);
             this.txtNombreDeportista.Name = "txtNombreDeportista";
             this.txtNombreDeportista.Size = new System.Drawing.Size(181, 20);
@@ -150,6 +145,7 @@
             // 
             // txtDireccionDeportista
             // 
+            this.txtDireccionDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccionDeportista.Location = new System.Drawing.Point(184, 211);
             this.txtDireccionDeportista.Name = "txtDireccionDeportista";
             this.txtDireccionDeportista.Size = new System.Drawing.Size(181, 20);
@@ -157,22 +153,15 @@
             // 
             // txtApellidoDeportista
             // 
+            this.txtApellidoDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellidoDeportista.Location = new System.Drawing.Point(184, 168);
             this.txtApellidoDeportista.Name = "txtApellidoDeportista";
             this.txtApellidoDeportista.Size = new System.Drawing.Size(181, 20);
             this.txtApellidoDeportista.TabIndex = 13;
             // 
-            // mskEdadDeportista
-            // 
-            this.mskEdadDeportista.Location = new System.Drawing.Point(184, 300);
-            this.mskEdadDeportista.Mask = "999";
-            this.mskEdadDeportista.Name = "mskEdadDeportista";
-            this.mskEdadDeportista.Size = new System.Drawing.Size(181, 20);
-            this.mskEdadDeportista.TabIndex = 14;
-            this.mskEdadDeportista.ValidatingType = typeof(int);
-            // 
             // txtCodigoDeportista
             // 
+            this.txtCodigoDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoDeportista.Location = new System.Drawing.Point(184, 78);
             this.txtCodigoDeportista.Name = "txtCodigoDeportista";
             this.txtCodigoDeportista.Size = new System.Drawing.Size(181, 20);
@@ -219,21 +208,37 @@
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(0, 17);
             // 
+            // txtEdad
+            // 
+            this.txtEdad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtEdad.Location = new System.Drawing.Point(184, 303);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(181, 20);
+            this.txtEdad.TabIndex = 19;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtTelefono.Location = new System.Drawing.Point(184, 258);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(181, 20);
+            this.txtTelefono.TabIndex = 20;
+            // 
             // frmRegistrosDeDeportistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 481);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.StatusBDdeportista);
             this.Controls.Add(this.cmdRegistroDeportistas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCodigoDeportista);
-            this.Controls.Add(this.mskEdadDeportista);
             this.Controls.Add(this.txtApellidoDeportista);
             this.Controls.Add(this.txtDireccionDeportista);
             this.Controls.Add(this.txtNombreDeportista);
             this.Controls.Add(this.lstDeporte);
-            this.Controls.Add(this.mskTelfonoDeportista);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -260,17 +265,17 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox mskTelfonoDeportista;
         private System.Windows.Forms.ComboBox lstDeporte;
         private System.Windows.Forms.TextBox txtNombreDeportista;
         private System.Windows.Forms.TextBox txtDireccionDeportista;
         private System.Windows.Forms.TextBox txtApellidoDeportista;
-        private System.Windows.Forms.MaskedTextBox mskEdadDeportista;
         private System.Windows.Forms.TextBox txtCodigoDeportista;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button cmdRegistroDeportistas;
         private System.Windows.Forms.StatusStrip StatusBDdeportista;
         private System.Windows.Forms.ToolStripStatusLabel lblFechaActual;
         private System.Windows.Forms.ToolStripStatusLabel lblEstado;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.TextBox txtTelefono;
     }
 }

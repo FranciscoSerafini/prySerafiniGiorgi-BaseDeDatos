@@ -51,6 +51,15 @@ namespace prySerafiniGiorgi_BaseDeDatos
             modificar.Modificar(deportistaCodigo);
 
 
+            //limpiamos cajas de textos
+            txtCodigoDEportista.Text = "";
+            txtDeporte.Text = "";
+            txtDireccion.Text = "";
+            txtEdad.Text = "";
+            txtTelefono.Text = "";
+            txtCodigoDEportista.Focus();
+
+
         }
     }
 }

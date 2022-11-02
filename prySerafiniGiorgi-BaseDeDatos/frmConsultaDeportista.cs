@@ -30,7 +30,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void cmdListarDeportista_Click(object sender, EventArgs e)
         {
-            
+            dtgDeportistas.DataSource = null;
             try
             {
                 conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaDeportista);

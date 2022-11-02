@@ -46,6 +46,25 @@ namespace prySerafiniGiorgi_BaseDeDatos
             modificar.Deportes = deporte;
             modificar.Provincia = provincia;
             modificar.Modificar(codigoEntrenador);
+
+            //limpiamos las cajas de texto
+            txtCodigoDeEntrenador.Text = "";
+            txtDeporte.Text = "";
+            txtDireccion.Text = "";
+            txtProvincia.Text = "";
+            txtCodigoDeEntrenador.Focus();
+
+            
+        }
+
+        private void frmModificacionEntrenadores_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -59,6 +59,7 @@
             // 
             // txtCodigoDEportista
             // 
+            this.txtCodigoDEportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoDEportista.Location = new System.Drawing.Point(107, 33);
             this.txtCodigoDEportista.Name = "txtCodigoDEportista";
             this.txtCodigoDEportista.Size = new System.Drawing.Size(158, 20);
@@ -87,6 +88,7 @@
             // 
             // txtDeporte
             // 
+            this.txtDeporte.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDeporte.Location = new System.Drawing.Point(73, 141);
             this.txtDeporte.Name = "txtDeporte";
             this.txtDeporte.Size = new System.Drawing.Size(158, 20);
@@ -94,6 +96,7 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTelefono.Location = new System.Drawing.Point(73, 102);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(158, 20);
@@ -101,6 +104,7 @@
             // 
             // txtEdad
             // 
+            this.txtEdad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEdad.Location = new System.Drawing.Point(73, 66);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(158, 20);
@@ -108,6 +112,7 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(73, 27);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(158, 20);

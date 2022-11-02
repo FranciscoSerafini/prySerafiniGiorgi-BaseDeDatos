@@ -27,13 +27,14 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void cmdRegistroDeportistas_Click(object sender, EventArgs e)
         {
+            
             //variables para almacenar datos para el registro
             string IdDeportista = txtCodigoDeportista.Text;
             string NombreDeportista = txtNombreDeportista.Text;
             string ApellidoDeportista = txtApellidoDeportista.Text;
             string DireccionDeportista = Convert.ToString(txtDireccionDeportista.Text);
-            Int32 TelefonoDeportistas = Convert.ToInt32(mskTelfonoDeportista.Text);
-            Int32 EdadDeportista = Convert.ToInt32(mskEdadDeportista.Text);
+            Int32 TelefonoDeportistas = Convert.ToInt32(txtTelefono.Text);
+            Int32 EdadDeportista = Convert.ToInt32(txtEdad.Text);
             string Deporte = Convert.ToString(lstDeporte.SelectedItem);
 
 
@@ -55,9 +56,9 @@ namespace prySerafiniGiorgi_BaseDeDatos
                 MessageBox.Show("Tus datos fueron ingresados con exito");
 
             }
-            catch (Exception)
+            catch (Exception mensaje)
             {
-                MessageBox.Show("Tus datos no se pudieron registrar");
+                MessageBox.Show("Tus datos no se pudieron registrar" + mensaje.Message);
                 //throw;
             }
             conexionBD.Close();
@@ -66,9 +67,12 @@ namespace prySerafiniGiorgi_BaseDeDatos
             txtCodigoDeportista.Text = "";
             txtDireccionDeportista.Text = "";
             txtNombreDeportista.Text = "";
-            mskEdadDeportista.Text = "";
-            mskTelfonoDeportista.Text = "";
+            txtEdad.Text = "";
+            txtTelefono.Text = "";
             lstDeporte.SelectedItem = -1;
+            txtCodigoDeportista.Focus();
+            lstDeporte.SelectedItem = "";
+
 
         }
 

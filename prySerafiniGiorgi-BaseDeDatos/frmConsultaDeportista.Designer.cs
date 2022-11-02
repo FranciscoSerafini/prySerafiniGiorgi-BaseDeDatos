@@ -127,6 +127,7 @@
             // 
             // txtCodigoDeportista
             // 
+            this.txtCodigoDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoDeportista.Location = new System.Drawing.Point(176, 33);
             this.txtCodigoDeportista.Name = "txtCodigoDeportista";
             this.txtCodigoDeportista.Size = new System.Drawing.Size(121, 20);

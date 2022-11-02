@@ -48,7 +48,8 @@
             // 
             // cmdGuardar
             // 
-            this.cmdGuardar.Location = new System.Drawing.Point(190, 229);
+            this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdGuardar.Location = new System.Drawing.Point(190, 224);
             this.cmdGuardar.Name = "cmdGuardar";
             this.cmdGuardar.Size = new System.Drawing.Size(75, 23);
             this.cmdGuardar.TabIndex = 9;
@@ -58,6 +59,7 @@
             // 
             // cmdBuscar
             // 
+            this.cmdBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdBuscar.Location = new System.Drawing.Point(190, 45);
             this.cmdBuscar.Name = "cmdBuscar";
             this.cmdBuscar.Size = new System.Drawing.Size(75, 23);
@@ -78,32 +80,37 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(15, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(250, 140);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del deportista";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtDeporte
             // 
+            this.txtDeporte.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDeporte.Location = new System.Drawing.Point(73, 102);
             this.txtDeporte.Name = "txtDeporte";
-            this.txtDeporte.Size = new System.Drawing.Size(158, 20);
+            this.txtDeporte.Size = new System.Drawing.Size(158, 21);
             this.txtDeporte.TabIndex = 4;
             // 
             // txtProvincia
             // 
+            this.txtProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtProvincia.Location = new System.Drawing.Point(73, 66);
             this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.Size = new System.Drawing.Size(158, 20);
+            this.txtProvincia.Size = new System.Drawing.Size(158, 21);
             this.txtProvincia.TabIndex = 6;
             // 
             // txtDireccion
             // 
+            this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(73, 27);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(158, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(158, 21);
             this.txtDireccion.TabIndex = 7;
             // 
             // label11
@@ -111,7 +118,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(139, 155);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 13);
+            this.label11.Size = new System.Drawing.Size(0, 15);
             this.label11.TabIndex = 9;
             // 
             // label10
@@ -119,7 +126,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(136, 125);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 8;
             // 
             // label9
@@ -127,7 +134,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(139, 61);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 13);
+            this.label9.Size = new System.Drawing.Size(0, 15);
             this.label9.TabIndex = 7;
             // 
             // label8
@@ -135,38 +142,42 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(136, 92);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 13);
+            this.label8.Size = new System.Drawing.Size(0, 15);
             this.label8.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 66);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.Size = new System.Drawing.Size(66, 15);
             this.label6.TabIndex = 4;
             this.label6.Text = "Provincia";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 104);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.Size = new System.Drawing.Size(58, 15);
             this.label5.TabIndex = 3;
             this.label5.Text = "Deporte";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(68, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Direccion";
             // 
             // txtCodigoDeEntrenador
             // 
+            this.txtCodigoDeEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoDeEntrenador.Location = new System.Drawing.Point(107, 16);
             this.txtCodigoDeEntrenador.Name = "txtCodigoDeEntrenador";
             this.txtCodigoDeEntrenador.Size = new System.Drawing.Size(158, 20);
@@ -175,9 +186,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.Size = new System.Drawing.Size(126, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "Codigo entrenador";
             // 
@@ -185,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 295);
+            this.ClientSize = new System.Drawing.Size(277, 253);
             this.Controls.Add(this.cmdGuardar);
             this.Controls.Add(this.cmdBuscar);
             this.Controls.Add(this.groupBox1);
@@ -193,6 +205,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmModificacionEntrenadores";
             this.Text = "Modificar entrenadores";
+            this.Load += new System.EventHandler(this.frmModificacionEntrenadores_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

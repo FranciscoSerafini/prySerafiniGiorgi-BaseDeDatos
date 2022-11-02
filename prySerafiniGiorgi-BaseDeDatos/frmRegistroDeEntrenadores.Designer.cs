@@ -71,6 +71,7 @@
             // 
             // txtCodigoEntrenador
             // 
+            this.txtCodigoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigoEntrenador.Location = new System.Drawing.Point(182, 69);
             this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
             this.txtCodigoEntrenador.Size = new System.Drawing.Size(181, 20);
@@ -78,6 +79,7 @@
             // 
             // txtApellidoEntrenador
             // 
+            this.txtApellidoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellidoEntrenador.Location = new System.Drawing.Point(182, 163);
             this.txtApellidoEntrenador.Name = "txtApellidoEntrenador";
             this.txtApellidoEntrenador.Size = new System.Drawing.Size(181, 20);
@@ -85,6 +87,7 @@
             // 
             // txtDireccionEntrenador
             // 
+            this.txtDireccionEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccionEntrenador.Location = new System.Drawing.Point(182, 210);
             this.txtDireccionEntrenador.Name = "txtDireccionEntrenador";
             this.txtDireccionEntrenador.Size = new System.Drawing.Size(181, 20);
@@ -92,6 +95,7 @@
             // 
             // txtNombreEntrenador
             // 
+            this.txtNombreEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombreEntrenador.Location = new System.Drawing.Point(182, 116);
             this.txtNombreEntrenador.Name = "txtNombreEntrenador";
             this.txtNombreEntrenador.Size = new System.Drawing.Size(181, 20);
@@ -99,6 +103,7 @@
             // 
             // lstDeporte
             // 
+            this.lstDeporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstDeporte.FormattingEnabled = true;
             this.lstDeporte.Items.AddRange(new object[] {
             "TENIS",
@@ -173,6 +178,7 @@
             // 
             // txtProvincia
             // 
+            this.txtProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtProvincia.Location = new System.Drawing.Point(182, 257);
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(181, 20);

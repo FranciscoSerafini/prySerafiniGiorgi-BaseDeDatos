@@ -34,6 +34,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void cmdListarEntrenadores_Click(object sender, EventArgs e)
         {
+            dtgEntrenadores.DataSource = null;
             try
             {
                 conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaEntrenador); //conexion de la base de datos
@@ -82,6 +83,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
                     "WHERE('" + codigo + "'=[CODIGO DEPORTISTA])";
                 queQuierodeEntrenador.ExecuteNonQuery();
                 MessageBox.Show("El registro fue eleminado");
+                txtCodigoEntrenador.Text = "";
+                txtCodigoEntrenador.Focus();
 
 
 

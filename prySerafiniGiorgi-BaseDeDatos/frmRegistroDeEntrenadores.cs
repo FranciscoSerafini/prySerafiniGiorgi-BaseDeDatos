@@ -59,6 +59,8 @@ namespace prySerafiniGiorgi_BaseDeDatos
             txtNombreEntrenador.Text = "";
             txtProvincia.Text = "";
             lstDeporte.SelectedItem = -1;
+            txtCodigoEntrenador.Focus();
+            lstDeporte.SelectedItem = "";
         }
 
         private void frmRegistroDeEntrenadores_Load(object sender, EventArgs e)
