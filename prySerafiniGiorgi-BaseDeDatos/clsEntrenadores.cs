@@ -89,12 +89,10 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
                 conexion.Close();
 
-
-
             }
             catch (Exception)
             {
-
+                MessageBox.Show("No se encontro");
 
             }
         }

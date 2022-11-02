@@ -165,3 +165,5 @@ C:\Users\franc\Source\Repos\prySerafiniGiorgi-BaseDeDatos12\prySerafiniGiorgi-Ba
 C:\Users\franc\Source\Repos\prySerafiniGiorgi-BaseDeDatos12\prySerafiniGiorgi-BaseDeDatos\obj\Debug\prySerafiniGiorgi-BaseDeDatos.csproj.CoreCompileInputs.cache
 C:\Users\franc\Source\Repos\prySerafiniGiorgi-BaseDeDatos12\prySerafiniGiorgi-BaseDeDatos\obj\Debug\prySerafiniGiorgi-BaseDeDatos.exe
 C:\Users\franc\Source\Repos\prySerafiniGiorgi-BaseDeDatos12\prySerafiniGiorgi-BaseDeDatos\obj\Debug\prySerafiniGiorgi-BaseDeDatos.pdb
+C:\Users\Alumno\Source\Repos\prySerafiniGiorgi-BaseDeDatos\prySerafiniGiorgi-BaseDeDatos\obj\Debug\prySerafiniGiorgi_BaseDeDatos.frmModificacionEntrenadores.resources
+C:\Users\Alumno\Source\Repos\prySerafiniGiorgi-BaseDeDatos\prySerafiniGiorgi-BaseDeDatos\obj\Debug\prySerafiniGiorgi_BaseDeDatos.ModifiacionesDeportistas.resources
