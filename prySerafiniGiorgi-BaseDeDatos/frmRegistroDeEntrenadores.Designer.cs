@@ -42,6 +42,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtProvincia = new System.Windows.Forms.TextBox();
+            this.StatusBDEntrenador = new System.Windows.Forms.StatusStrip();
+            this.lblFechaActual = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StatusBDEntrenador.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdRegistroDeportistas
@@ -174,11 +178,32 @@
             this.txtProvincia.Size = new System.Drawing.Size(181, 20);
             this.txtProvincia.TabIndex = 35;
             // 
+            // StatusBDEntrenador
+            // 
+            this.StatusBDEntrenador.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblFechaActual,
+            this.lblEstado});
+            this.StatusBDEntrenador.Location = new System.Drawing.Point(0, 391);
+            this.StatusBDEntrenador.Name = "StatusBDEntrenador";
+            this.StatusBDEntrenador.Size = new System.Drawing.Size(378, 22);
+            this.StatusBDEntrenador.TabIndex = 36;
+            // 
+            // lblFechaActual
+            // 
+            this.lblFechaActual.Name = "lblFechaActual";
+            this.lblFechaActual.Size = new System.Drawing.Size(0, 17);
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(0, 17);
+            // 
             // frmRegistroDeEntrenadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 406);
+            this.ClientSize = new System.Drawing.Size(378, 413);
+            this.Controls.Add(this.StatusBDEntrenador);
             this.Controls.Add(this.txtProvincia);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmdRegistroDeportistas);
@@ -195,6 +220,9 @@
             this.Controls.Add(this.label1);
             this.Name = "frmRegistroDeEntrenadores";
             this.Text = "Registro de entrenadores";
+            this.Load += new System.EventHandler(this.frmRegistroDeEntrenadores_Load);
+            this.StatusBDEntrenador.ResumeLayout(false);
+            this.StatusBDEntrenador.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +244,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtProvincia;
+        private System.Windows.Forms.StatusStrip StatusBDEntrenador;
+        private System.Windows.Forms.ToolStripStatusLabel lblFechaActual;
+        private System.Windows.Forms.ToolStripStatusLabel lblEstado;
     }
 }

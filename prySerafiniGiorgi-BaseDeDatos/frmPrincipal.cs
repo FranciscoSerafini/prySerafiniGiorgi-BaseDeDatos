@@ -78,5 +78,11 @@ namespace prySerafiniGiorgi_BaseDeDatos
             ModifiacionesDeportistas objVentaModificacionesDeportista = new ModifiacionesDeportistas();
             objVentaModificacionesDeportista.ShowDialog();
         }
+
+        private void entrenadorToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmModificacionEntrenadores objVentana = new frmModificacionEntrenadores();
+            objVentana.ShowDialog();
+        }
     }
 }

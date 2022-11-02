@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClaseDeportista.cs" />
+    <Compile Include="clsEntrenadores.cs" />
     <Compile Include="frmConsultaDeportista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,12 @@
     </Compile>
     <Compile Include="frmConsultaEntrenador.Designer.cs">
       <DependentUpon>frmConsultaEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificacionEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificacionEntrenadores.Designer.cs">
+      <DependentUpon>frmModificacionEntrenadores.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -90,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaEntrenador.resx">
       <DependentUpon>frmConsultaEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificacionEntrenadores.resx">
+      <DependentUpon>frmModificacionEntrenadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

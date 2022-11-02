@@ -92,14 +92,14 @@
             // deportistasToolStripMenuItem
             // 
             this.deportistasToolStripMenuItem.Name = "deportistasToolStripMenuItem";
-            this.deportistasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deportistasToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.deportistasToolStripMenuItem.Text = "Deportistas";
             this.deportistasToolStripMenuItem.Click += new System.EventHandler(this.deportistasToolStripMenuItem_Click);
             // 
             // entrenadorToolStripMenuItem
             // 
             this.entrenadorToolStripMenuItem.Name = "entrenadorToolStripMenuItem";
-            this.entrenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entrenadorToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.entrenadorToolStripMenuItem.Text = "Entrenador";
             this.entrenadorToolStripMenuItem.Click += new System.EventHandler(this.entrenadorToolStripMenuItem_Click);
             // 
@@ -115,14 +115,14 @@
             // deportistasToolStripMenuItem1
             // 
             this.deportistasToolStripMenuItem1.Name = "deportistasToolStripMenuItem1";
-            this.deportistasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.deportistasToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.deportistasToolStripMenuItem1.Text = "Deportistas";
             this.deportistasToolStripMenuItem1.Click += new System.EventHandler(this.deportistasToolStripMenuItem1_Click);
             // 
             // entrenadorToolStripMenuItem1
             // 
             this.entrenadorToolStripMenuItem1.Name = "entrenadorToolStripMenuItem1";
-            this.entrenadorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.entrenadorToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.entrenadorToolStripMenuItem1.Text = "Entrenador";
             this.entrenadorToolStripMenuItem1.Click += new System.EventHandler(this.entrenadorToolStripMenuItem1_Click);
             // 
@@ -147,6 +147,7 @@
             this.entrenadorToolStripMenuItem2.Name = "entrenadorToolStripMenuItem2";
             this.entrenadorToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.entrenadorToolStripMenuItem2.Text = "Entrenador";
+            this.entrenadorToolStripMenuItem2.Click += new System.EventHandler(this.entrenadorToolStripMenuItem2_Click);
             // 
             // frmPrincipal
             // 

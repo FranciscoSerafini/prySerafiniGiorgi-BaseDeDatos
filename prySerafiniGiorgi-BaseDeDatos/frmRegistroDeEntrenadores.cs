@@ -41,7 +41,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
                 comandoBD.Connection = conexionBD; //conexion al origen de datos
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
-                comandoBD.CommandText = "INSERT INTO" + " ENTRENADORES ([CODIGO ENTRENADOR], [NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE])" +
+                comandoBD.CommandText = " INSERT INTO " + " ENTRENADORES ([CODIGO ENTRENADOR], [NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE])" +
                         " VALUES ('" +IdEntrenadores + "','" + NombreEntrenador + "','" + ApellidoEntrenador+ "','" + DireccionEntrenador+ "','" + ProvinciaEntrenador + "','" + Deporte+"')";
 
                 comandoBD.ExecuteNonQuery();//numero de filas afectadas
@@ -49,7 +49,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
             }
             catch (Exception)
             {
-
+                MessageBox.Show("Tus datos  NO fueron ingresados con exito");
                 //throw;
             }
             //luego de grabar debemos limpiar las cajas de textos
@@ -59,6 +59,19 @@ namespace prySerafiniGiorgi_BaseDeDatos
             txtNombreEntrenador.Text = "";
             txtProvincia.Text = "";
             lstDeporte.SelectedItem = -1;
+        }
+
+        private void frmRegistroDeEntrenadores_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                StatusBDEntrenador.BackColor = Color.Green;
+            }
+            catch (Exception barraColor)
+            {
+                StatusBDEntrenador.BackColor = Color.Red;
+                //throw;
+            }
         }
     }
 }
