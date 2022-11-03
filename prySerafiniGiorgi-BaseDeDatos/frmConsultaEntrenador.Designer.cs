@@ -100,7 +100,7 @@
             this.cmdListarEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdListarEntrenadores.Location = new System.Drawing.Point(547, 250);
             this.cmdListarEntrenadores.Name = "cmdListarEntrenadores";
-            this.cmdListarEntrenadores.Size = new System.Drawing.Size(101, 39);
+            this.cmdListarEntrenadores.Size = new System.Drawing.Size(101, 29);
             this.cmdListarEntrenadores.TabIndex = 1;
             this.cmdListarEntrenadores.Text = "Listar";
             this.cmdListarEntrenadores.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             this.grpEliminarRegistro.Controls.Add(this.cmdEliminarRegistro);
             this.grpEliminarRegistro.Location = new System.Drawing.Point(12, 260);
             this.grpEliminarRegistro.Name = "grpEliminarRegistro";
-            this.grpEliminarRegistro.Size = new System.Drawing.Size(319, 119);
+            this.grpEliminarRegistro.Size = new System.Drawing.Size(319, 97);
             this.grpEliminarRegistro.TabIndex = 6;
             this.grpEliminarRegistro.TabStop = false;
             this.grpEliminarRegistro.Text = "Eliminar registro";
@@ -126,6 +126,7 @@
             this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
             this.txtCodigoEntrenador.Size = new System.Drawing.Size(121, 21);
             this.txtCodigoEntrenador.TabIndex = 6;
+            this.txtCodigoEntrenador.TextChanged += new System.EventHandler(this.txtCodigoEntrenador_TextChanged);
             // 
             // label1
             // 
@@ -139,10 +140,11 @@
             // 
             // cmdEliminarRegistro
             // 
+            this.cmdEliminarRegistro.Enabled = false;
             this.cmdEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdEliminarRegistro.Location = new System.Drawing.Point(196, 72);
+            this.cmdEliminarRegistro.Location = new System.Drawing.Point(196, 60);
             this.cmdEliminarRegistro.Name = "cmdEliminarRegistro";
-            this.cmdEliminarRegistro.Size = new System.Drawing.Size(101, 39);
+            this.cmdEliminarRegistro.Size = new System.Drawing.Size(101, 27);
             this.cmdEliminarRegistro.TabIndex = 4;
             this.cmdEliminarRegistro.Text = "Eliminar";
             this.cmdEliminarRegistro.UseVisualStyleBackColor = true;
@@ -152,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 397);
+            this.ClientSize = new System.Drawing.Size(660, 366);
             this.Controls.Add(this.grpEliminarRegistro);
             this.Controls.Add(this.cmdListarEntrenadores);
             this.Controls.Add(this.dtgEntrenadores);

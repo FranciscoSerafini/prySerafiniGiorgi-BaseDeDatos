@@ -56,6 +56,17 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
             
         }
+        private void Verificacion()
+        {
+            if (txtCodigoDeEntrenador.Text != "" && txtDeporte.Text != "" && txtDireccion.Text != "" && txtProvincia.Text != "")
+            {
+                cmdGuardar.Enabled = true;
+            }
+            else
+            {
+                cmdGuardar.Enabled = false;
+            }
+        }
 
         private void frmModificacionEntrenadores_Load(object sender, EventArgs e)
         {
@@ -69,7 +80,22 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
         private void txtDireccion_TextChanged(object sender, EventArgs e)
         {
+            Verificacion();
+        }
 
+        private void txtCodigoDeEntrenador_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void txtProvincia_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void txtDeporte_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
         }
     }
 }

@@ -59,7 +59,43 @@ namespace prySerafiniGiorgi_BaseDeDatos
             txtTelefono.Text = "";
             txtCodigoDEportista.Focus();
 
+            
+        }
+        private void verificacion()
+        {
+            if (txtCodigoDEportista.Text != "" && txtDeporte.Text != "" && txtDireccion.Text != "" && txtEdad.Text != "" && txtTelefono.Text != "")
+            {
+                cmdGuardar.Enabled = true;
+            }
+            else
+            {
+                cmdGuardar.Enabled = false;
+            }
+        }
 
+        private void txtCodigoDEportista_TextChanged(object sender, EventArgs e)
+        {
+            verificacion();
+        }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+            verificacion();
+        }
+
+        private void txtEdad_TextChanged(object sender, EventArgs e)
+        {
+            verificacion();
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+            verificacion();
+        }
+
+        private void txtDeporte_TextChanged(object sender, EventArgs e)
+        {
+            verificacion();
         }
     }
 }

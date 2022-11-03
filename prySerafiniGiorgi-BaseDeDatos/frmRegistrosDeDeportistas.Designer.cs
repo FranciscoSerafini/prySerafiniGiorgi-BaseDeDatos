@@ -134,6 +134,7 @@
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(181, 21);
             this.lstDeporte.TabIndex = 9;
+            this.lstDeporte.SelectedIndexChanged += new System.EventHandler(this.lstDeporte_SelectedIndexChanged);
             // 
             // txtNombreDeportista
             // 
@@ -143,6 +144,7 @@
             this.txtNombreDeportista.Name = "txtNombreDeportista";
             this.txtNombreDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtNombreDeportista.TabIndex = 10;
+            this.txtNombreDeportista.TextChanged += new System.EventHandler(this.txtNombreDeportista_TextChanged);
             // 
             // txtDireccionDeportista
             // 
@@ -152,6 +154,7 @@
             this.txtDireccionDeportista.Name = "txtDireccionDeportista";
             this.txtDireccionDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtDireccionDeportista.TabIndex = 12;
+            this.txtDireccionDeportista.TextChanged += new System.EventHandler(this.txtDireccionDeportista_TextChanged);
             // 
             // txtApellidoDeportista
             // 
@@ -161,6 +164,7 @@
             this.txtApellidoDeportista.Name = "txtApellidoDeportista";
             this.txtApellidoDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtApellidoDeportista.TabIndex = 13;
+            this.txtApellidoDeportista.TextChanged += new System.EventHandler(this.txtApellidoDeportista_TextChanged);
             // 
             // txtCodigoDeportista
             // 
@@ -170,6 +174,7 @@
             this.txtCodigoDeportista.Name = "txtCodigoDeportista";
             this.txtCodigoDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtCodigoDeportista.TabIndex = 15;
+            this.txtCodigoDeportista.TextChanged += new System.EventHandler(this.txtCodigoDeportista_TextChanged);
             // 
             // label8
             // 
@@ -183,6 +188,7 @@
             // 
             // cmdRegistroDeportistas
             // 
+            this.cmdRegistroDeportistas.Enabled = false;
             this.cmdRegistroDeportistas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistroDeportistas.Location = new System.Drawing.Point(230, 387);
             this.cmdRegistroDeportistas.Name = "cmdRegistroDeportistas";
@@ -221,6 +227,7 @@
             this.mskTelefono.Size = new System.Drawing.Size(181, 21);
             this.mskTelefono.TabIndex = 19;
             this.mskTelefono.ValidatingType = typeof(int);
+            this.mskTelefono.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskTelefono_MaskInputRejected);
             // 
             // mskEdad
             // 
@@ -231,6 +238,7 @@
             this.mskEdad.Size = new System.Drawing.Size(181, 21);
             this.mskEdad.TabIndex = 20;
             this.mskEdad.ValidatingType = typeof(int);
+            this.mskEdad.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskEdad_MaskInputRejected);
             // 
             // frmRegistrosDeDeportistas
             // 

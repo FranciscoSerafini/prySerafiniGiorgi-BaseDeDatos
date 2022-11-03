@@ -61,8 +61,20 @@ namespace prySerafiniGiorgi_BaseDeDatos
             lstDeporte.SelectedItem = -1;
             txtCodigoEntrenador.Focus();
             lstDeporte.SelectedItem = "";
+       
+                    
         }
-
+        private void Verificacion()
+        {
+            if (txtApellidoEntrenador.Text != "" && txtCodigoEntrenador.Text != "" && txtDireccionEntrenador.Text != "" && txtNombreEntrenador.Text != "" && txtProvincia.Text != "" && lstDeporte.SelectedIndex >= 0) 
+            {
+                cmdRegistroEntrenadores.Enabled = true;
+            }
+            else
+            {
+                cmdRegistroEntrenadores.Enabled = false;
+            }
+        }
         private void frmRegistroDeEntrenadores_Load(object sender, EventArgs e)
         {
             try
@@ -74,6 +86,36 @@ namespace prySerafiniGiorgi_BaseDeDatos
                 StatusBDEntrenador.BackColor = Color.Red;
                 //throw;
             }
+        }
+
+        private void txtCodigoEntrenador_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void txtNombreEntrenador_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void txtApellidoEntrenador_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void txtDireccionEntrenador_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void txtProvincia_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
+
+        private void lstDeporte_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Verificacion();
         }
     }
 }

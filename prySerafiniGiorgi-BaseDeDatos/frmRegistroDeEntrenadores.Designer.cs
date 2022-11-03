@@ -50,6 +50,7 @@
             // 
             // cmdRegistroEntrenadores
             // 
+            this.cmdRegistroEntrenadores.Enabled = false;
             this.cmdRegistroEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdRegistroEntrenadores.Location = new System.Drawing.Point(228, 348);
             this.cmdRegistroEntrenadores.Name = "cmdRegistroEntrenadores";
@@ -77,6 +78,7 @@
             this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
             this.txtCodigoEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtCodigoEntrenador.TabIndex = 31;
+            this.txtCodigoEntrenador.TextChanged += new System.EventHandler(this.txtCodigoEntrenador_TextChanged);
             // 
             // txtApellidoEntrenador
             // 
@@ -86,6 +88,7 @@
             this.txtApellidoEntrenador.Name = "txtApellidoEntrenador";
             this.txtApellidoEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtApellidoEntrenador.TabIndex = 29;
+            this.txtApellidoEntrenador.TextChanged += new System.EventHandler(this.txtApellidoEntrenador_TextChanged);
             // 
             // txtDireccionEntrenador
             // 
@@ -95,6 +98,7 @@
             this.txtDireccionEntrenador.Name = "txtDireccionEntrenador";
             this.txtDireccionEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtDireccionEntrenador.TabIndex = 28;
+            this.txtDireccionEntrenador.TextChanged += new System.EventHandler(this.txtDireccionEntrenador_TextChanged);
             // 
             // txtNombreEntrenador
             // 
@@ -104,6 +108,7 @@
             this.txtNombreEntrenador.Name = "txtNombreEntrenador";
             this.txtNombreEntrenador.Size = new System.Drawing.Size(181, 21);
             this.txtNombreEntrenador.TabIndex = 27;
+            this.txtNombreEntrenador.TextChanged += new System.EventHandler(this.txtNombreEntrenador_TextChanged);
             // 
             // lstDeporte
             // 
@@ -119,6 +124,7 @@
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(181, 21);
             this.lstDeporte.TabIndex = 26;
+            this.lstDeporte.SelectedIndexChanged += new System.EventHandler(this.lstDeporte_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -188,6 +194,7 @@
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(181, 21);
             this.txtProvincia.TabIndex = 35;
+            this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
             // 
             // StatusBDEntrenador
             // 

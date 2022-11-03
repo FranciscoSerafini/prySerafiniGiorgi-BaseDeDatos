@@ -31,6 +31,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
         private void cmdListarDeportista_Click(object sender, EventArgs e)
         {
             dtgDeportistas.DataSource = null;
+            dtgDeportistas.Rows.Clear();
             try
             {
                 conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaDeportista);
@@ -95,6 +96,22 @@ namespace prySerafiniGiorgi_BaseDeDatos
 
 
 
+        }
+        private void Verificacion()
+        {
+            if (txtCodigoDeportista.Text != "" )
+            {
+                cmdEliminarRegistro.Enabled = true;
+            }
+            else
+            {
+                cmdEliminarRegistro.Enabled = false;
+            }
+        }
+
+        private void txtCodigoDeportista_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
         }
     }
 }

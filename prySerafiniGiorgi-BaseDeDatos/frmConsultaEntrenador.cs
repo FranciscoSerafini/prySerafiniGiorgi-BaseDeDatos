@@ -35,6 +35,7 @@ namespace prySerafiniGiorgi_BaseDeDatos
         private void cmdListarEntrenadores_Click(object sender, EventArgs e)
         {
             dtgEntrenadores.DataSource = null;
+            dtgEntrenadores.Rows.Clear();
             try
             {
                 conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaEntrenador); //conexion de la base de datos
@@ -103,8 +104,26 @@ namespace prySerafiniGiorgi_BaseDeDatos
         private void frmConsultaEntrenador_Load(object sender, EventArgs e)
         {
 
+        
+        }
+        private void Verificacion()
+        {
+            if (txtCodigoEntrenador.Text != "")
+            {
+                cmdEliminarRegistro.Enabled = true;
+            }
+            else
+            {
+                cmdEliminarRegistro.Enabled = false;
+            }
+        }
+
+        private void txtCodigoEntrenador_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
         }
     }
+
     }
 
 

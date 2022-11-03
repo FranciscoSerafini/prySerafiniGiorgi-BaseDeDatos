@@ -48,6 +48,7 @@
             // 
             // cmdGuardar
             // 
+            this.cmdGuardar.Enabled = false;
             this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdGuardar.Location = new System.Drawing.Point(227, 225);
             this.cmdGuardar.Name = "cmdGuardar";
@@ -96,6 +97,7 @@
             this.txtDeporte.Name = "txtDeporte";
             this.txtDeporte.Size = new System.Drawing.Size(158, 21);
             this.txtDeporte.TabIndex = 4;
+            this.txtDeporte.TextChanged += new System.EventHandler(this.txtDeporte_TextChanged);
             // 
             // txtProvincia
             // 
@@ -104,6 +106,7 @@
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(158, 21);
             this.txtProvincia.TabIndex = 6;
+            this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
             // 
             // txtDireccion
             // 
@@ -179,10 +182,12 @@
             // txtCodigoDeEntrenador
             // 
             this.txtCodigoDeEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoDeEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoDeEntrenador.Location = new System.Drawing.Point(144, 19);
             this.txtCodigoDeEntrenador.Name = "txtCodigoDeEntrenador";
-            this.txtCodigoDeEntrenador.Size = new System.Drawing.Size(158, 20);
+            this.txtCodigoDeEntrenador.Size = new System.Drawing.Size(158, 21);
             this.txtCodigoDeEntrenador.TabIndex = 6;
+            this.txtCodigoDeEntrenador.TextChanged += new System.EventHandler(this.txtCodigoDeEntrenador_TextChanged);
             // 
             // label1
             // 
@@ -206,7 +211,6 @@
             this.Controls.Add(this.label1);
             this.Name = "frmModificacionEntrenadores";
             this.Text = "Modificar entrenadores";
-            this.Load += new System.EventHandler(this.frmModificacionEntrenadores_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
