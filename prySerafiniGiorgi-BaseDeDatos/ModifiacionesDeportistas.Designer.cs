@@ -67,6 +67,7 @@
             this.txtCodigoDEportista.Size = new System.Drawing.Size(209, 21);
             this.txtCodigoDEportista.TabIndex = 1;
             this.txtCodigoDEportista.TextChanged += new System.EventHandler(this.txtCodigoDEportista_TextChanged);
+            this.txtCodigoDEportista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDEportista_KeyPress);
             // 
             // groupBox1
             // 
@@ -100,6 +101,7 @@
             this.txtDeporte.Size = new System.Drawing.Size(209, 21);
             this.txtDeporte.TabIndex = 4;
             this.txtDeporte.TextChanged += new System.EventHandler(this.txtDeporte_TextChanged);
+            this.txtDeporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDeporte_KeyPress);
             // 
             // txtTelefono
             // 

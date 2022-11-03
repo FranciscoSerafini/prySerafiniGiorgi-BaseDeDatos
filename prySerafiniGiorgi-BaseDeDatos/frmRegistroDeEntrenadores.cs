@@ -117,5 +117,41 @@ namespace prySerafiniGiorgi_BaseDeDatos
         {
             Verificacion();
         }
+
+        private void txtCodigoEntrenador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                MessageBox.Show("Por favor introduce solo letras");
+            }
+        }
+
+        private void txtNombreEntrenador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                MessageBox.Show("Por favor introduce solo letras");
+            }
+        }
+
+        private void txtApellidoEntrenador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                MessageBox.Show("Por favor introduce solo letras");
+            }
+        }
+
+        private void txtProvincia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                MessageBox.Show("Por favor introduce solo letras");
+            }
+        }
     }
 }

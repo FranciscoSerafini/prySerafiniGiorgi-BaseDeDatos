@@ -145,6 +145,7 @@
             this.txtNombreDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtNombreDeportista.TabIndex = 10;
             this.txtNombreDeportista.TextChanged += new System.EventHandler(this.txtNombreDeportista_TextChanged);
+            this.txtNombreDeportista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreDeportista_KeyPress);
             // 
             // txtDireccionDeportista
             // 
@@ -165,6 +166,7 @@
             this.txtApellidoDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtApellidoDeportista.TabIndex = 13;
             this.txtApellidoDeportista.TextChanged += new System.EventHandler(this.txtApellidoDeportista_TextChanged);
+            this.txtApellidoDeportista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoDeportista_KeyPress);
             // 
             // txtCodigoDeportista
             // 
@@ -175,6 +177,7 @@
             this.txtCodigoDeportista.Size = new System.Drawing.Size(181, 21);
             this.txtCodigoDeportista.TabIndex = 15;
             this.txtCodigoDeportista.TextChanged += new System.EventHandler(this.txtCodigoDeportista_TextChanged);
+            this.txtCodigoDeportista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDeportista_KeyPress);
             // 
             // label8
             // 

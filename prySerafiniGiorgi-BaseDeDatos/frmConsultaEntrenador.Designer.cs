@@ -127,6 +127,7 @@
             this.txtCodigoEntrenador.Size = new System.Drawing.Size(121, 21);
             this.txtCodigoEntrenador.TabIndex = 6;
             this.txtCodigoEntrenador.TextChanged += new System.EventHandler(this.txtCodigoEntrenador_TextChanged);
+            this.txtCodigoEntrenador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoEntrenador_KeyPress);
             // 
             // label1
             // 

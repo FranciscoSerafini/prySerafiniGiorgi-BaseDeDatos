@@ -103,6 +103,7 @@
             this.txtCodigoDeportista.Size = new System.Drawing.Size(121, 20);
             this.txtCodigoDeportista.TabIndex = 6;
             this.txtCodigoDeportista.TextChanged += new System.EventHandler(this.txtCodigoDeportista_TextChanged);
+            this.txtCodigoDeportista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDeportista_KeyPress);
             // 
             // label1
             // 

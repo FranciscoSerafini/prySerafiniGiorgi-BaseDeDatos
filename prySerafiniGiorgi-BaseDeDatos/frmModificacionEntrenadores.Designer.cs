@@ -98,6 +98,7 @@
             this.txtDeporte.Size = new System.Drawing.Size(158, 21);
             this.txtDeporte.TabIndex = 4;
             this.txtDeporte.TextChanged += new System.EventHandler(this.txtDeporte_TextChanged);
+            this.txtDeporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDeporte_KeyPress);
             // 
             // txtProvincia
             // 
@@ -107,6 +108,7 @@
             this.txtProvincia.Size = new System.Drawing.Size(158, 21);
             this.txtProvincia.TabIndex = 6;
             this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
+            this.txtProvincia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProvincia_KeyPress);
             // 
             // txtDireccion
             // 

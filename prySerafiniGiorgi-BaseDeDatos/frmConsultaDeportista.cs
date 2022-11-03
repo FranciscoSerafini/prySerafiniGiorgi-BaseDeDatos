@@ -113,5 +113,14 @@ namespace prySerafiniGiorgi_BaseDeDatos
         {
             Verificacion();
         }
+
+        private void txtCodigoDeportista_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 & e.KeyChar <= 64) || (e.KeyChar >= 91 & e.KeyChar <= 96) || (e.KeyChar >= 123 & e.KeyChar <= 255))
+            {
+                e.Handled = true;
+                MessageBox.Show("Por favor introduce solo letras");
+            }
+        }
     }
 }
